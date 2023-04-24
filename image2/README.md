@@ -1,3 +1,5 @@
+# P
+
 首先建立一個名為bdse29app的資料夾，用以放置Dockerfile文件與專題資料。
 
 開啟命令題字元，輸入wsl進入Windows的Linux虛擬主機。WSL (Windows Subsystem for Linux) 它是一個適用於Linux的Windows子系統
