@@ -1,4 +1,4 @@
-# 使用httpd:2.4作為base image
+# 使用Apache httpd:2.4作為base image
 
 首先建立一個名為bdse29app2的資料夾，用以放置Dockerfile文件與專題資料。
 製作一個httpd.conf文件檔，放置在Dockerfile文件的目錄。
