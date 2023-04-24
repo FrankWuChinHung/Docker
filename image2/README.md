@@ -1,4 +1,4 @@
-# 使用python:3.9-slim-buster作為映像檔來源
+# 使用python:3.9-slim-buster作為base image
 
 首先建立一個名為bdse29app的資料夾，用以放置Dockerfile文件與專題資料。
 
