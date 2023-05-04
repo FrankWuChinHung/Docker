@@ -12,15 +12,15 @@ image與container 完成後，這一個完整的docker host就可以與其中的
 3.cd /mnt/c/Users/XXX/website_v7，進入Dockerfile所在的目錄中
 
 4.建立映像:
- docker image build -t bdse29image -f ./Dockerfile.txt .
+-> docker image build -t bdse29image -f ./Dockerfile.txt .
 
 -這串指令是透過Dockerfile來建置映像檔。docker引擎會按照dockerfile步驟自動建置映像。
 
 5.建立Linux虛擬網路: 
- docker network create bdse29network
+-> docker network create bdse29network
 
 6.建立主程式容器:
- docker container run -dit --name bdse29web -p 8082:5000 --network bdse29network bdse29image
+-> docker container run -dit --name bdse29web -p 8082:5000 --network bdse29network bdse29image
 
 -d：參數表示啟動一個後台執行的容器，也就是說容器會在背景執行而不會顯示 log 訊息在終端機上。
 -i：參數表示開啟標準輸入（stdin），讓使用者可以跟容器互動。
@@ -31,7 +31,7 @@ image與container 完成後，這一個完整的docker host就可以與其中的
 7.登入並註冊ngrok網站，取得私人token
 -<token>= 個人token
 8.建立ngrok容器:
- docker run -it --name bdses29ngrok -e NGROK_AUTHTOKEN=<token> --network bdse29network ngrok/ngrok http bdse29web:5000
+-> docker run -it --name bdses29ngrok -e NGROK_AUTHTOKEN=<token> --network bdse29network ngrok/ngrok http bdse29web:5000
 
 -隨後ngrok容器就能連接到bdse29web容器中的網頁端口(5000)
 
