@@ -1,1 +1,5 @@
 # Docker環境建制
+我們的網站是由Docker來架設，首先先編寫一個Dockerfile。
+https://www.notion.so/Docker-33b6f80158aa4af8a62169fe644d36cd?pvs=4#69756810e12a484fb6c9536e619c2b8d
+Dockerfile是一種文本文件，其中包含了一個image的所有指令，從而讓Docker引擎可以自動構建一個包含所需應用程序的映像。也可以說它是一個使用container的說明書，依照環境與使用者需求編寫指令。
+Image與container 完成後，這一個完整的docker host就可以與其中的flask程式做溝通，以達成在本地端的瀏覽器上呈現我們的網站。
