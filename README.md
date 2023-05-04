@@ -9,7 +9,7 @@ image與container 完成後，這一個完整的docker host就可以與其中的
 
 2.開啟命令題字元，輸入WSL進入Linux虛擬環境。WSL (Windows Subsystem for Linux) 它是一個適用於Linux的Windows子系統
 
-3. cd /mnt/c/Users/XXX/website_v7，進入Dockerfile所在的目錄中
+3.cd /mnt/c/Users/XXX/website_v7，進入Dockerfile所在的目錄中
 
 4.建立映像:docker image build -t bdse29image -f ./Dockerfile.txt .
 
