@@ -36,7 +36,7 @@ image與container 完成後，這一個完整的docker host就可以與其中的
 --network：將容器放進虛擬網路中
 
 ## 7.登入並註冊ngrok網站，取得私人token
--<token>= 個人token
+<token>= 個人token
 
 ## 8.建立ngrok容器:
 
